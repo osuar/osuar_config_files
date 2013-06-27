@@ -5,11 +5,14 @@
 #<ip-address>	<hostname.domain.org>	<hostname>
 127.0.0.1	localhost.localdomain	localhost
 ::1		localhost.localdomain	localhost
-127.0.0.1								rogue-0
-::1										rogue-0
+127.0.0.1								hermes-0
+::1										hermes-0
 
-192.168.0.10							yoos117
-192.168.0.20							rogue-0
-192.168.0.21							rogue-1
+192.168.0.10							hephaestus
+192.168.0.11							osuar-brutus
+192.168.0.20							hermes-0
+192.168.0.21							hermes-1
+192.168.0.30							apollo-0
+192.168.0.31							apollo-1
 
 # End of file
