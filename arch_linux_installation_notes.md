@@ -35,6 +35,18 @@ This will take an SD card at /dev/sdd and create an image file named sd.img in
 the current directory with a block size of 1 MB and a total size of 3.68 GB
 (3766\*1024\*1024 bytes = 3.68 GB, see?).
 
+
+## When compiling large software packages like OpenCV, the ODROID runs out of disk space in /tmp.
+
+Run:
+
+	systemctl mask tmp.mount
+
+and reboot. By default, the system will have been configured to set up /tmp in
+RAM as tmpfs with half the size of available RAM, but compiling
+ros-groovy-opencv2, for example, will want much more than this, even with
+single-threaded make.
+
 <!--
 vim: ft=markdown
 -->
